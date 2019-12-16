@@ -1,9 +1,12 @@
 var animationId;
+var activeTarget;
+var transitionElement;
 document.querySelector(".wrapper").addEventListener('click', handleAnimation);
 
 
 function handleAnimation(e){
     var element = e.target;
+    activeTarget = e.target;
     if(element.className != "card"){
         return;
     }
@@ -11,15 +14,16 @@ function handleAnimation(e){
 
     // add final positioned element adn overlay
 
-    document.body.insertAdjacentHTML("beforeend", "<div class='overlay-bg' style='visibility: hidden;opacity: 0;'><div class='card expanded'></div></div>");
+    document.body.insertAdjacentHTML("beforeend", "<div class='overlay-bg' style='opacity: 0;'><div style='opacity: 0;' class='card expanded'></div></div>");
 
     var overlay = document.querySelector('.overlay-bg');
+    overlay.addEventListener('click', reverseAnimation, false);
     var expandedCard = overlay.children[0];
-    console.log(expandedCard);
+
     var endPos = expandedCard.getBoundingClientRect();
 
     // render transition card
-    var transitionElement = document.createElement("div");
+    transitionElement = document.createElement("div");
     transitionElement.className = "card transition";
     transitionElement.style = `height: ${startPos.height}; width: ${startPos.width}; top: ${startPos.top}; left: ${startPos.left}`;
     document.body.insertAdjacentElement("beforeend", transitionElement);
@@ -31,9 +35,19 @@ function handleAnimation(e){
     var xTranslate = (endPos.left- startPos.left)/xScale;
     var yTranslate = (endPos.top- startPos.top)/yScale;
 
-    console.log(xScale, yScale);
 
+//Fade out clicked card and fade in expanded
 
+element.classList.remove('fadeInDelayed');
+element.classList.add('fadeOut');
+
+expandedCard.classList.remove('fadeOut');
+expandedCard.classList.add('fadeInDelayed');
+
+overlay.classList.remove('fadeOutDelayed');
+overlay.classList.add('fadeIn');
+
+//Transform card
     animationId = transitionElement.animate(
     [
         {
@@ -56,4 +70,23 @@ function handleAnimation(e){
         fill: "forwards",
         easing: "ease-out"
     });
+}
+
+
+function reverseAnimation(e){
+    var overlay = document.querySelector(".overlay-bg"); 
+
+    animationId.onfinish = function(){
+        console.log("FINISHED!");
+        document.body.removeChild(overlay);
+        document.body.removeChild(transitionElement);
+        animationId.onfinish = 0;
+    };
+
+    overlay.classList.remove("fadeInDelayed");
+    overlay.classList.add("fadeOut");
+
+    activeTarget.classList.remove("fadeOut");
+    activeTarget.classList.add("fadeInDelayed");
+    animationId.reverse();
 }

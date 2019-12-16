@@ -26,3 +26,27 @@
   background-color: blue;
   transform-origin: 0 0;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn,
+.fadeInDelayed {
+  animation: fadeIn 150ms linear forwards;
+}
+
+.fadeOut,
+.fadeOutDelayed {
+  animation: fadeIn 150ms linear reverse forwards;
+}
+
+.fadeInDelayed,
+.fadeOutDelayed {
+  animation-delay: 220ms;
+}
