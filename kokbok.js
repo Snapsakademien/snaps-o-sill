@@ -30,7 +30,13 @@ function createCard(recept){
             break;
     }
     
-    var htmlStr = "<div class='card'><div class='image' style='background-image: url("+recept.imgUrl+"); background-size: cover;'></div><div class='footer'><p class='cardHeader'><b>"+recept.name+"</b> <i style='color: "+color+"'>"+recept.group+"</i></p><p class='description'>"+recept.desc+"</p><p style='margin-top: 2rem'>Ingredienser: "+recept.ingredients+"</p></div></div>";
+    var htmlStr = `<div class='card'>
+    <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
+    <div class='footer'>
+        <p class='cardHeader'>
+            <b>${recept.name}</b> <i style='color: ${color}'>${recept.group}</i>
+        </p>
+    <p class='description'>${recept.desc}</p><p style='margin-top: 2rem'>Ingredienser: ${recept.ingredients}</p></div></div>`;
     
     
     wrapper[0].insertAdjacentHTML("beforeend", htmlStr);
