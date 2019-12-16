@@ -1,5 +1,67 @@
+body{
+    margin: 0;
+    background-color: #eaeaea;
+}
+
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+
 .card{
+    background-color: #ffffff;
+    margin-top: 2rem;
     width: 200px;
     height: 200px;
-    background-color: green;
+    border: 1px solid rgba(188, 188, 188, 0.09);
+    box-shadow: 0px 2px 5px -1px rgba(128, 128, 128, 0.39);
+    margin-left: 4rem;
+}
+
+.wrapper{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    background-color: #3c393c;
+    color: #ffffff;
+}
+
+.title{
+    margin-left: 1rem;
+}
+
+.image{
+    height: 60%;
+}
+
+.footer{
+    height: 34%;
+    overflow: hidden;
+    margin-left: 0.5rem;
+}
+
+.description{
+    font-family: "Cormorant Garamond", serif;
+    margin-top: 0.3rem;
+}
+
+b{
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 20px;
+}
+
+i{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 15px;
+    color: #d76bff;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        justify-content: center;
+    }
 }
