@@ -9,17 +9,17 @@ h1{
 }
 
 .card{
+    display: inline-block;
     background-color: #ffffff;
     margin-top: 2rem;
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 250px;
     border: 1px solid rgba(188, 188, 188, 0.09);
     box-shadow: 0px 2px 5px -1px rgba(128, 128, 128, 0.39);
     margin-left: 4rem;
 }
 
 .wrapper{
-    display: flex;
     width: 80%;
     margin: 0 auto;
 }
@@ -36,12 +36,18 @@ nav{
 
 .image{
     height: 60%;
+    overflow: hidden;
 }
 
 .footer{
     height: 34%;
     overflow: hidden;
     margin-left: 0.5rem;
+}
+
+.cardHeader{
+    margin: 0; 
+    margin-top: 1rem;
 }
 
 .description{
