@@ -29,6 +29,9 @@ function createCard(recept) {
     <p class='description'>${recept.desc}</p><p style='margin-top: 2rem'>Ingredienser: ${recept.ingredients}</p></div></div>
     <div class='overlay-bg disabled'>
         <div class='card expanded ${id}'>
+            <div class='cross'>
+                <span>+</span>
+            </div>
             <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
             <div class='footer'>
         <p class='cardHeader'>
@@ -52,6 +55,13 @@ function createCard(recept) {
       if (e.target == this) {
         toggleOverlay(id);
       }
+    });
+
+  document
+    .querySelector(`.card.expanded.${id} > .cross`)
+    .addEventListener("click", function() {
+      console.log("clicked");
+      toggleOverlay(id);
     });
 }
 
