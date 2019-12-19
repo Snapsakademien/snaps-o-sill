@@ -102,6 +102,10 @@ i {
   background-position: center;
 }
 
+.card.expanded > .footer {
+  overflow: initial;
+}
+
 .disabled {
   display: none;
 }
