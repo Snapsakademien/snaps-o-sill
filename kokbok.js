@@ -1,27 +1,3 @@
-var recept = [
-  {
-    name: "B1 Special",
-    group: "B1",
-    desc: "Den här schnapsen är vidrig",
-    ingredients: "Brännvin, Surströmming",
-    imgUrl: "Moth.jpg"
-  },
-  {
-    name: "Test",
-    group: "T1",
-    desc: "Test",
-    ingredients: "Test",
-    imgUrl: "meme.jpg"
-  },
-  {
-    name: "Test",
-    group: "T1",
-    desc: "Test",
-    ingredients: "Test",
-    imgUrl: "meme.jpg"
-  }
-];
-
 function createCard(recept) {
   var color = "gray";
   var wrapper = document.getElementsByClassName("wrapper");
@@ -72,8 +48,10 @@ function createCard(recept) {
 
   document
     .querySelector(`.card.expanded.${id}`)
-    .parentElement.addEventListener("click", function() {
-      toggleOverlay(id);
+    .parentElement.addEventListener("click", function(e) {
+      if (e.target == this) {
+        toggleOverlay(id);
+      }
     });
 }
 
