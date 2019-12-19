@@ -1,74 +1,116 @@
-
-body{
-    margin: 0;
-    background-color: #eaeaea;
+body {
+  margin: 0;
+  background-color: #eaeaea;
 }
 
-h1{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
 }
 
-.card{
-    display: inline-block;
-    background-color: #ffffff;
-    margin-top: 2rem;
-    width: 210px;
-    height: 250px;
-    border: 1px solid rgba(188, 188, 188, 0.09);
-    box-shadow: 0px 2px 5px -1px rgba(128, 128, 128, 0.39);
-    margin-left: 4rem;
+.card {
+  display: inline-block;
+  background-color: #ffffff;
+  margin-top: 2rem;
+  width: 210px;
+  height: 250px;
+  border: 1px solid rgba(188, 188, 188, 0.09);
+  box-shadow: 0px 2px 5px -1px rgba(128, 128, 128, 0.39);
+  margin-left: 4rem;
 }
 
-.wrapper{
-    width: 80%;
-    margin: 0 auto;
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
-nav{
-    display: flex;
-    background-color: #3c393c;
-    color: #ffffff;
+nav {
+  display: flex;
+  background-color: #3c393c;
+  color: #ffffff;
 }
 
-.title{
-    margin-left: 1rem;
+.title {
+  margin-left: 1rem;
 }
 
-.image{
-    height: 60%;
-    overflow: hidden;
+.image {
+  height: 60%;
+  overflow: hidden;
 }
 
-.footer{
-    height: 34%;
-    overflow: hidden;
-    margin-left: 0.5rem;
+.footer {
+  height: 34%;
+  overflow: hidden;
+  margin-left: 0.5rem;
 }
 
-.cardHeader{
-    margin: 0; 
-    margin-top: 1rem;
+.cardHeader {
+  margin: 0;
+  margin-top: 1rem;
 }
 
-.description{
-    font-family: "Cormorant Garamond", serif;
-    margin-top: 0.3rem;
+.description {
+  font-family: "Cormorant Garamond", serif;
+  margin-top: 0.3rem;
 }
 
-b{
-    font-family: "Tenor Sans", sans-serif;
-    font-size: 20px;
+b {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 20px;
 }
 
-i{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 15px;
-    color: #d76bff;
+i {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  color: #d76bff;
 }
 
-@media screen and (max-width: 600px){
-    nav{
-        justify-content: center;
-    }
+@media screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+  }
+}
+
+/*Overlay and expanded card*/
+.overlay-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(20, 20, 20, 0.4);
+  animation: fadeIn 0.2s ease-out;
+}
+
+.overlay-bg > .card.expanded {
+  margin: 0 auto;
+  animation: appear 0.2s ease-out;
+}
+
+.disabled {
+  display: none;
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

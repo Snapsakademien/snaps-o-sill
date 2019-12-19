@@ -1,47 +1,87 @@
-var recept = [{name: "B1 Special", 
-             group: "B1", 
-             desc: "Den här schnapsen är vidrig", 
-             ingredients: "Brännvin, Surströmming", 
-             imgUrl: "Moth.jpg"},
-              {name: "Test", 
-             group: "T1", 
-             desc: "Test", 
-             ingredients: "Test", 
-             imgUrl: "meme.jpg"},
-              {name: "Test", 
-             group: "T1", 
-             desc: "Test", 
-             ingredients: "Test", 
-             imgUrl: "meme.jpg"}
-           ];
+var recept = [
+  {
+    name: "B1 Special",
+    group: "B1",
+    desc: "Den här schnapsen är vidrig",
+    ingredients: "Brännvin, Surströmming",
+    imgUrl: "Moth.jpg"
+  },
+  {
+    name: "Test",
+    group: "T1",
+    desc: "Test",
+    ingredients: "Test",
+    imgUrl: "meme.jpg"
+  },
+  {
+    name: "Test",
+    group: "T1",
+    desc: "Test",
+    ingredients: "Test",
+    imgUrl: "meme.jpg"
+  }
+];
 
+function createCard(recept) {
+  var color = "gray";
+  var wrapper = document.getElementsByClassName("wrapper");
+  switch (recept.group) {
+    case "T1":
+      color = "red";
+      break;
+    case "T2":
+      color = "blue";
+      break;
+    case "B1":
+      color = "purple";
+      break;
+    case "B2":
+      color = "magenta";
+      break;
+  }
 
-function createCard(recept){
-    var color = "gray";
-    var wrapper = document.getElementsByClassName("wrapper");
-    switch(recept.group){
-        case "T1": color = "red";
-            break;
-        case "T2": color = "blue";
-            break;
-        case "B1": color = "purple";
-            break;
-        case "B2": color = "magenta";
-            break;
-    }
-    
-    var htmlStr = `<div class='card'>
+  // Random in case two things have the same name
+  var id = recept.name.replace(" ", "-") + Math.round(Math.random() * 10000);
+  console.log();
+
+  var htmlStr = `<div class='card ${id}'>
     <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
     <div class='footer'>
         <p class='cardHeader'>
             <b>${recept.name}</b> <i style='color: ${color}'>${recept.group}</i>
         </p>
-    <p class='description'>${recept.desc}</p><p style='margin-top: 2rem'>Ingredienser: ${recept.ingredients}</p></div></div>`;
-    
-    
-    wrapper[0].insertAdjacentHTML("beforeend", htmlStr);
+    <p class='description'>${recept.desc}</p><p style='margin-top: 2rem'>Ingredienser: ${recept.ingredients}</p></div></div>
+    <div class='overlay-bg disabled'>
+        <div class='card expanded ${id}'>
+            <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
+            <div class='footer'>
+        <p class='cardHeader'>
+            <b>${recept.name}</b> <i style='color: ${color}'>${recept.group}</i>
+        </p>
+    <p class='description'>${recept.desc}</p><p style='margin-top: 2rem'>Ingredienser: ${recept.ingredients}</p></div></div>
+        </div>
+    </div>
+    `;
+
+  wrapper[0].insertAdjacentHTML("beforeend", htmlStr);
+
+  document.querySelector(`.card.${id}`).addEventListener("click", function() {
+    console.log("clicked");
+    toggleOverlay(id);
+  });
+
+  document
+    .querySelector(`.card.expanded.${id}`)
+    .parentElement.addEventListener("click", function() {
+      toggleOverlay(id);
+    });
 }
 
-for(var i = 0; i < recept.length; i++){
-    createCard(recept[i]);
+for (var i = 0; i < recept.length; i++) {
+  createCard(recept[i]);
+}
+
+function toggleOverlay(id) {
+  var overlay = document.querySelector(`.expanded.${id}`).parentElement;
+  overlay.classList.toggle("disabled");
 }
