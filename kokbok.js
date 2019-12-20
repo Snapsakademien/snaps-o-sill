@@ -26,7 +26,7 @@ function createCard(recept) {
         <p class='cardHeader'>
             <b>${recept.name}</b> <i style='color: ${color}'>${recept.group}</i>
         </p>
-    <p class='description'>${recept.desc}</p><p style='margin-top: 2rem'>Ingredienser: ${recept.ingredients}</p></div></div>
+    <p class='description'>${recept.desc}</p></div></div>
     <div class='overlay-bg disabled'>
         <div class='card expanded ${id}'>
             <div class='cross'>
@@ -37,7 +37,8 @@ function createCard(recept) {
         <p class='cardHeader'>
             <b>${recept.name}</b> <i style='color: ${color}'>${recept.group}</i>
         </p>
-    <p class='description'>${recept.desc}</p><p style='margin-top: 2rem'>Ingredienser: ${recept.ingredients}</p></div></div>
+        <p>Ingredienser: ${recept.ingredients}</p>
+    <p class='description'>${recept.desc}</p></div></div>
         </div>
     </div>
     `;
