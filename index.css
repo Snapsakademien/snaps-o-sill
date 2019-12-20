@@ -11,12 +11,12 @@ h1 {
 .card {
   display: inline-block;
   background-color: #ffffff;
-  margin-top: 2rem;
   width: 210px;
   height: 250px;
-  border: 1px solid rgba(188, 188, 188, 0.09);
   box-shadow: 0px 2px 5px -1px rgba(128, 128, 128, 0.39);
-  margin-left: 4rem;
+  margin: 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -97,6 +97,7 @@ i {
   max-width: 100%;
   max-height: 100%;
   overflow-y: auto;
+  cursor: default;
 }
 
 .card.expanded .image {
