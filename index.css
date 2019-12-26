@@ -162,23 +162,23 @@ b {
   text-shadow: 0 0 5px black;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 510px){
     .card{
         width: 90%;
         height: 280px;
     }
 }
 
-@media screen and (min-width: 410px){
+@media screen and (min-width: 560px){
     .card{
-        width: 44%;
+        width: 39%;
         height: 340px;
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1000px){
     .card{
-        width: 22%;
+        width: 27%;
         height: 280px;
     }
 }
