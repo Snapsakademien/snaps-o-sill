@@ -175,3 +175,10 @@ b {
         height: 340px;
     }
 }
+
+@media screen and (min-width: 800px){
+    .card{
+        width: 22%;
+        height: 280px;
+    }
+}
