@@ -46,6 +46,13 @@ var recept = [
     imgUrl: "images/sill.jpg"
   },
   {
+    name: "Tvålsnaps",
+    group: "B2",
+    desc: "Ska ha smakat tvål enligt vissa. Maj 2019.",
+    ingredients: "Citronskal, färska korianderblad",
+    imgUrl: "images/snaps.jpg"
+  },
+  {
     name: "Test",
     group: "T1",
     desc: `What is Lorem Ipsum?
