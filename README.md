@@ -9,10 +9,9 @@ In [recept.js](https://github.com/Snapsakademien/snaps-o-sill/blob/master/recept
 {
 title: "Name of thing",
 group: "B1", // T1,T2,B1,B2
-desc: "Long description"
+desc: "Long description",
 ingredients: "Comma, seperated, ingredients",
 imgUrl: "url/to/image.jpg" //snaps.jpg and sill.jpg are to be used as stock images
-
 }
 ```
 
