@@ -12,7 +12,7 @@ h1 {
   display: inline-block;
   background-color: #ffffff;
   width: 22%;
-  height: 40%;
+  height: 280px;
   box-shadow: 0px 2px 5px -1px rgba(128, 128, 128, 0.39);
   margin: 15px;
   border-radius: 5px;
@@ -74,6 +74,7 @@ b {
   font-family: 'Nunito', sans-serif;
   font-size: 15px;
   color: #d76bff;
+  margin-left: 4px;
   /*border: 1px solid;*/
 }
 
