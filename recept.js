@@ -23,18 +23,27 @@ var recept = [
     imgUrl: "images/sill.jpg"
   },
   {
-    name: "Test",
-    group: "T1",
-    desc: "Test",
-    ingredients: "Test",
+    name: "Framförallt stark",
+    group: "B1",
+    desc: "Habanerosnaps gjord av Bison 2014. 'Man sket blod i tre dagar'",
+    ingredients: "Habanero, chili, honung",
     imgUrl: "images/snaps.jpg"
   },
   {
-    name: "Test",
-    group: "T1",
-    desc: "Test",
-    ingredients: "Test",
+    name: "Papas pepparkakssnaps",
+    group: "T2",
+    desc:
+      "Krossa pepparkakor i snapsen, sila ur det och smaka av med glögg. Felix Thiel och Papa.",
+    ingredients: "Pepparkakor, glögg",
     imgUrl: "images/snaps.jpg"
+  },
+  {
+    name: "Mojitosill",
+    group: "B1",
+    desc:
+      "Ger en väldigt fräsch smak. Myntan kan med fördel köras i mixer. Går även att slänga på en gnutta alkohol.",
+    ingredients: "Mynta, lime, sockerlag",
+    imgUrl: "images/sill.jpg"
   },
   {
     name: "Test",
