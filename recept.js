@@ -15,11 +15,12 @@ var recept = [
     imgUrl: "images/sill.jpg"
   },
   {
-    name: "Test",
-    group: "T1",
-    desc: "Test",
-    ingredients: "Test",
-    imgUrl: "images/snaps.jpg"
+    name: "Julsill",
+    group: "B1",
+    desc:
+      "Julsmak när den är som godast! Blanda glöggen och apelsinjuicen cirka 50/50, släng i kanelstängerna, lite nejlikor och saffran. Det kommer smaka så mycket jul så att du blir Arne Weise!",
+    ingredients: "Glögg, apelsinjuice, nejlikor, saffran, kanelstänger",
+    imgUrl: "images/sill.jpg"
   },
   {
     name: "Test",
