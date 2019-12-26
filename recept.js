@@ -53,6 +53,13 @@ var recept = [
     imgUrl: "images/snaps.jpg"
   },
   {
+    name: "Biltemasill",
+    group: "B1",
+    desc: "En sill som har gått till historien",
+    ingredients: "Korv, ketchup",
+    imgUrl: "images/sill.jpg"
+  },
+  {
     name: "Test",
     group: "T1",
     desc: `What is Lorem Ipsum?
