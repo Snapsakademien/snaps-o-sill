@@ -20,14 +20,16 @@ function createCard(recept) {
   var id = recept.name.replace(" ", "-") + Math.round(Math.random() * 10000);
   console.log();
 
-  var htmlStr = `<div class='card ${id}'>
-    <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
-    <div class='footer'>
-        <div class='cardHeader'>
-        <p style='display: inline;'>${recept.name}</p>
-        <p class='group' style='color: white; background-color: ${color}'>${recept.group}</p>
-        <p class='description'>${recept.desc}</p>
-        </div>
+  var htmlStr = `
+    <div class='card ${id}'>
+      <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
+      <div class='footer'>
+          <div class='cardHeader'>
+            <p style='display: inline;'>${recept.name}</p>
+            <p class='group' style='color: white; background-color: ${color}'>${recept.group}</p>
+            <p class='description'>${recept.desc}</p>
+          </div>
+      </div>
     </div>
     <div class='overlay-bg disabled'>
         <div class='card expanded ${id}'>
