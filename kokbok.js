@@ -3,16 +3,16 @@ function createCard(recept) {
   var wrapper = document.getElementsByClassName("wrapper");
   switch (recept.group) {
     case "T1":
-      color = "red";
+      color = "#FF585A"; //Red
       break;
     case "T2":
-      color = "blue";
+      color = "#66CAFF"; //Blue
       break;
     case "B1":
-      color = "purple";
+      color = "#622880"; //Purple
       break;
     case "B2":
-      color = "magenta";
+      color = "#7BFF6B"; //Green
       break;
   }
 
@@ -23,10 +23,12 @@ function createCard(recept) {
   var htmlStr = `<div class='card ${id}'>
     <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
     <div class='footer'>
-        <p class='cardHeader'>
-            <b>${recept.name}</b> <i style='color: ${color}'>${recept.group}</i>
-        </p>
-    <p class='description'>${recept.desc}</p></div></div>
+        <div class='cardHeader'>
+        <p style='display: inline;'>${recept.name}</p>
+        <p class='group' style='color: white; background-color: ${color}'>${recept.group}</p>
+        <p class='description'>${recept.desc}</p>
+        </div>
+    </div>
     <div class='overlay-bg disabled'>
         <div class='card expanded ${id}'>
             <div class='cross'>

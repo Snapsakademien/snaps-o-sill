@@ -11,8 +11,8 @@ h1 {
 .card {
   display: inline-block;
   background-color: #ffffff;
-  width: 210px;
-  height: 250px;
+  width: 22%;
+  height: 40%;
   box-shadow: 0px 2px 5px -1px rgba(128, 128, 128, 0.39);
   margin: 15px;
   border-radius: 5px;
@@ -48,22 +48,33 @@ nav {
 .cardHeader {
   margin: 0;
   margin-top: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
 }
 
 .description {
-  font-family: "Cormorant Garamond", serif;
-  margin-top: 0.3rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0.5rem;
+  font-size: 15px;
+    color: #363636;
 }
 
 b {
-  font-family: "Tenor Sans", sans-serif;
-  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  /*font-size: 20px;*/
 }
 
-i {
-  font-family: "Cormorant Garamond", serif;
+.group {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+  border-radius: 2.5px;
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
   color: #d76bff;
+  /*border: 1px solid;*/
 }
 
 @media screen and (max-width: 600px) {
@@ -149,4 +160,11 @@ i {
   font-size: 45px;
   color: white;
   text-shadow: 0 0 5px black;
+}
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 90%;
+        height: 40%;
+    }
 }

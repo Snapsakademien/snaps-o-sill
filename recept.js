@@ -23,14 +23,14 @@ var recept = [
   },
   {
     name: "Test",
-    group: "T1",
+    group: "B2",
     desc: "Test",
     ingredients: "Test",
     imgUrl: "meme.jpg"
   },
   {
     name: "Test",
-    group: "T1",
+    group: "T2",
     desc: "Test",
     ingredients: "Test",
     imgUrl: "meme.jpg"
