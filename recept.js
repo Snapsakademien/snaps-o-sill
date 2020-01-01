@@ -23,6 +23,22 @@ var recept = [
     imgUrl: "images/t-red.jpg"
   },
   {
+    name: "Te-sprit",
+    group: "B2",
+    desc:
+      "En snabblandad snaps för en stämma med dålig framförhållning. Tog kanske en halvtimme att göra. 2011.",
+    ingredients: "Påsar med te av blandad smak",
+    imgUrl: "images/snaps.jpg"
+  },
+  {
+    name: "Träsprit",
+    group: "B2",
+    desc:
+      "Denna blev riktigt bra. Jag skulle nog kunna benämna den som mitt mästerverk. 2011.",
+    ingredients: "Mycket granskott, tallbarr, björknäver, apsang-te",
+    imgUrl: "images/snaps.jpg"
+  },
+  {
     name: "B-röd",
     group: "B2",
     desc: "Ska enligt utsago smaka ljuvligt. 2010.",
