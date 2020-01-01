@@ -22,7 +22,7 @@ function createCard(recept) {
 
   var htmlStr = `
     <div class='card ${id}'>
-      <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
+      <div class='image' style='background-image: url(${recept.imgUrl});'></div>
       <div class='footer'>
           <div class='cardHeader'>
             <p style='display: inline;'>${recept.name}</p>

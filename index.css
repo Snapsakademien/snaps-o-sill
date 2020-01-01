@@ -37,6 +37,8 @@ nav {
 .image {
   height: 60%;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {
@@ -48,19 +50,19 @@ nav {
 .cardHeader {
   margin: 0;
   margin-top: 1rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 1.5rem;
 }
 
 .description {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 0.5rem;
   font-size: 15px;
-    color: #363636;
+  color: #363636;
 }
 
 b {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   /*font-size: 20px;*/
 }
 
@@ -68,10 +70,10 @@ b {
   display: inline;
   padding-left: 5px;
   padding-right: 5px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+  padding-bottom: 2px;
+  padding-top: 2px;
   border-radius: 2.5px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 15px;
   color: #d76bff;
   margin-left: 4px;
@@ -162,23 +164,23 @@ b {
   text-shadow: 0 0 5px black;
 }
 
-@media screen and (max-width: 510px){
-    .card{
-        width: 90%;
-        height: 280px;
-    }
+@media screen and (max-width: 510px) {
+  .card {
+    width: 90%;
+    height: 280px;
+  }
 }
 
-@media screen and (min-width: 560px){
-    .card{
-        width: 39%;
-        height: 340px;
-    }
+@media screen and (min-width: 560px) {
+  .card {
+    width: 39%;
+    height: 340px;
+  }
 }
 
-@media screen and (min-width: 1000px){
-    .card{
-        width: 27%;
-        height: 280px;
-    }
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 27%;
+    height: 280px;
+  }
 }

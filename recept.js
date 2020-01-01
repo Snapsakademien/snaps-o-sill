@@ -16,6 +16,20 @@ var recept = [
     imgUrl: "images/sill.jpg"
   },
   {
+    name: "Djävfulens kuk",
+    group: "B2",
+    desc: "Bra på pappret, men värdelös idé i övrigt. 2010.",
+    ingredients: "Jordgubbar, citron",
+    imgUrl: "images/t-red.jpg"
+  },
+  {
+    name: "B-röd",
+    group: "B2",
+    desc: "Ska enligt utsago smaka ljuvligt. 2010.",
+    ingredients: "Jordgubbar, rosmarin",
+    imgUrl: "images/t-red.jpg"
+  },
+  {
     name: "Framförallt stark",
     group: "B1",
     desc: "Habanerosnaps gjord av Bison 2014. 'Man sket blod i tre dagar'",
