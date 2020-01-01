@@ -1,3 +1,8 @@
+*::selection {
+  color: white;
+  background-color: #123456;
+}
+
 body {
   margin: 0;
   background-color: #eaeaea;
@@ -6,6 +11,14 @@ body {
 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 30px;
+}
+
+.creds {
+  opacity: 0.8;
+  text-align: center;
+  padding: 10%;
+
+  font-family: "Cormorant Garamond", serif;
 }
 
 .card {
