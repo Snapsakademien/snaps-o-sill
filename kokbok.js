@@ -38,9 +38,10 @@ function createCard(recept) {
             </div>
             <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
             <div class='footer'>
-        <p class='cardHeader'>
-            <b>${recept.name}</b> <i style='color: ${color}'>${recept.group}</i>
-        </p>
+        <div class='cardHeader'>
+            <b>${recept.name}</b> 
+            <p class='group' style='color: white; background-color: ${color}'>${recept.group}</p>
+        </div>
         <p>Ingredienser: ${recept.ingredients}</p>
     <p class='description'>${recept.desc}</p></div></div>
         </div>
