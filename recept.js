@@ -13,7 +13,8 @@ var recept = [
     desc:
       "Julsmak när den är som godast! Blanda glöggen och apelsinjuicen cirka 50/50, släng i kanelstängerna, lite nejlikor och saffran. Det kommer smaka så mycket jul så att du blir Arne Weise!",
     ingredients: "Glögg, apelsinjuice, nejlikor, saffran, kanelstänger",
-    imgUrl: "images/sill.jpg"
+    imgUrl:
+      "https://mittkok.expressen.se/wp-content/uploads/2013/12/63cd1606-3931-4ddf-b111-96df9b439e1b-700x700.jpg"
   },
   {
     name: "Djävfulens kuk",
@@ -28,6 +29,15 @@ var recept = [
     desc:
       "En snabblandad snaps för en stämma med dålig framförhållning. Tog kanske en halvtimme att göra. 2011.",
     ingredients: "Påsar med te av blandad smak",
+    imgUrl:
+      "https://assets.icanet.se/t_product_large_v1,f_auto/7311857510622.jpg"
+  },
+  {
+    name: "Hokkysnaps",
+    group: "T1",
+    desc:
+      "Snaps med Hockeypulver för de dagar man känner sig lite extra brölig. Passar bra med en prilla i käften och slagsmål på isen.",
+    ingredients: "Hockeypulver",
     imgUrl: "images/snaps.jpg"
   },
   {
