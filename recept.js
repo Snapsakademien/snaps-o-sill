@@ -34,14 +34,14 @@ var recept = [
   },
   {
     name: "Sillsnaps",
-    group: "B2",
+    group: "B1",
     desc: "Det bästa av två världar.",
     ingredients: "Sill",
     imgUrl: "images/snaps.jpg"
   },
   {
     name: "Snapssill",
-    group: "B2",
+    group: "B1",
     desc: "Det bästa av två världar fast åt andra hållet.",
     ingredients: "Snaps",
     imgUrl: "images/sill.jpg"
