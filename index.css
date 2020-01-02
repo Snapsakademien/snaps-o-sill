@@ -1,3 +1,8 @@
+*::selection {
+  color: white;
+  background-color: #123456;
+}
+
 body {
   margin: 0;
   background-color: #eaeaea;
@@ -6,6 +11,14 @@ body {
 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 30px;
+}
+
+.creds {
+  opacity: 0.8;
+  text-align: center;
+  padding: 10%;
+
+  font-family: "Cormorant Garamond", serif;
 }
 
 .card {
@@ -35,9 +48,11 @@ nav {
 }
 
 .image {
-    height: 60%;
-    overflow: hidden;
-    text-align: right;
+  height: 60%;
+  overflow: hidden;
+  text-align: right;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {
@@ -53,14 +68,14 @@ nav {
 }
 
 .description {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 0.5rem;
   font-size: 15px;
-    color: #363636;
+  color: #363636;
 }
 
 b {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   /*font-size: 20px;*/
 }
 
@@ -90,6 +105,7 @@ b {
 
 /*Overlay and expanded card*/
 .overlay-bg {
+  z-index: 999;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -167,23 +183,23 @@ b {
   text-shadow: 0 0 5px black;
 }
 
-@media screen and (max-width: 510px){
-    .card{
-        width: 90%;
-        height: 280px;
-    }
+@media screen and (max-width: 510px) {
+  .card {
+    width: 90%;
+    height: 280px;
+  }
 }
 
-@media screen and (min-width: 560px){
-    .card{
-        width: 39%;
-        height: 340px;
-    }
+@media screen and (min-width: 560px) {
+  .card {
+    width: 39%;
+    height: 340px;
+  }
 }
 
-@media screen and (min-width: 1000px){
-    .card{
-        width: 27%;
-        height: 280px;
-    }
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 27%;
+    height: 280px;
+  }
 }
