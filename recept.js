@@ -60,7 +60,8 @@ var recept = [
     desc:
       "Denna blev riktigt bra. Jag skulle nog kunna benämna den som mitt mästerverk. 2011.",
     ingredients: "Mycket granskott, tallbarr, björknäver, apsang-te",
-    imgUrl: "images/snaps.jpg"
+    imgUrl:
+      "https://alternativbehandlingar.ifokus.se/u2/8f4ff3dedba21ae4fd2aef615f1bd9dc/default/spruce-2329909-960-720.jpg"
   },
   {
     name: "B-röd",
@@ -68,6 +69,22 @@ var recept = [
     desc: "Ska enligt utsago smaka ljuvligt. 2010.",
     ingredients: "Jordgubbar, rosmarin",
     imgUrl: "images/t-red.jpg"
+  },
+  {
+    name: "Baconsnaps",
+    group: "T2",
+    desc: `
+    <ol>
+    <li>Knaperstek en jäkla massa bacon.</li>
+    <li>Lägg baconet på lite hushållspapper så en del av fettet rinner av åtminstone.</li>
+    <li>Smula ner baconet i brännvinet.</li>
+    <li>Vänta 3-4 veckor(?).</li>
+    <li>Sila, först med fin sil och sedan genom kaffefilter, minst 5 vändor. Det är klart när det börjar bli klart, så att säga.</li>
+    <li>Bjud dina kära Snapsakademiekollegor på det. Spelar ingen roll att det egentligen är otjänligt - det tar slut ändå.</li>
+    </ol>
+    Undertecknad, T2a, stod för tillverkningen. Har fina bilder på den hemmasnickrade etiketten. Recensioner gör ingen glad. Det finns inget gott att säga om den. 2011?`,
+    ingredients: "Knaperstekt bacon",
+    imgUrl: "images/snaps.jpg"
   },
   {
     name: "Framförallt stark",
