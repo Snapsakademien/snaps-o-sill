@@ -22,12 +22,16 @@ function createCard(recept) {
 
   var htmlStr = `
     <div class='card ${id}'>
-      <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
+      <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'>
+        <div class='group' style='background-color: ${color};'>
+          <p>${recept.group}</p>
+        </div>
+      </div>
       <div class='footer'>
-          <div class='cardHeader'>
-            <p style='display: inline;'>${recept.name}</p>
-            <p class='group' style='color: white; background-color: ${color}'>${recept.group}</p>
+          <div class='cardInfo'>
+            <p style='display: inline; font-size: 1.5rem'>${recept.name}</p>
             <p class='description'>${recept.desc}</p>
+            <p>Ingredienser: ${recept.ingredients}</p>
           </div>
       </div>
     </div>
@@ -36,13 +40,18 @@ function createCard(recept) {
             <div class='cross'>
                 <span>+</span>
             </div>
-            <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'></div>
+            <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'>
+                <div class='group' style='background-color: ${color}'>
+                    <p>${recept.group}</p>
+                </div>
+            </div>
             <div class='footer'>
-        <p class='cardHeader'>
-            <b>${recept.name}</b> <i style='color: ${color}'>${recept.group}</i>
-        </p>
-        <p>Ingredienser: ${recept.ingredients}</p>
-    <p class='description'>${recept.desc}</p></div></div>
+                <div class='cardInfo'>
+                    <p style='display: inline; font-size: 1.5rem'>${recept.name}</p>
+                    <p class='description'>${recept.desc}</p>
+                    <p>Ingredienser: ${recept.ingredients}</p>
+                </div>
+            </div>
         </div>
     </div>
     `;
