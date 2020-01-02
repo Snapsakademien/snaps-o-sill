@@ -33,6 +33,20 @@ var recept = [
       "https://assets.icanet.se/t_product_large_v1,f_auto/7311857510622.jpg"
   },
   {
+    name: "Sillsnaps",
+    group: "B2",
+    desc: "Det bästa av två världar.",
+    ingredients: "Sill",
+    imgUrl: "images/snaps.jpg"
+  },
+  {
+    name: "Snapssill",
+    group: "B2",
+    desc: "Det bästa av två världar fast åt andra hållet.",
+    ingredients: "Snaps",
+    imgUrl: "images/sill.jpg"
+  },
+  {
     name: "Hokkysnaps",
     group: "T1",
     desc:
