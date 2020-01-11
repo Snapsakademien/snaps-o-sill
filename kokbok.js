@@ -3,16 +3,20 @@ function createCard(recept) {
   var wrapper = document.getElementsByClassName("wrapper");
   switch (recept.group) {
     case "T1":
-      color = "#FF585A"; //Red
+      //Pink
+      color = "#FF3BB4";
       break;
     case "T2":
-      color = "#66CAFF"; //Blue
+      //Green
+      color = "#4BFF3B";
       break;
     case "B1":
-      color = "#622880"; //Purple
+      //Blue
+      color = "#2B92FF";
       break;
     case "B2":
-      color = "#7BFF6B"; //Green
+      //Yellow
+      color = "#FFB32B";
       break;
   }
 
