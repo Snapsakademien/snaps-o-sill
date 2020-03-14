@@ -25,7 +25,7 @@ function createCard(recept) {
   console.log();
 
 
-  var recipie = {
+  var recipe = {
       "@context": "http://schema.org",
       "@type": "Recipe",
       "author": recept.group+" i Snapsakademien",
@@ -43,11 +43,11 @@ function createCard(recept) {
   };
     
   if(recept.instructions === ""){
-      delete recipie.recipeInstructions;
+      delete recipe.recipeInstructions;
   }
     
   var htmlStr = `
-    <script type='application/ld+json'>${JSON.stringify(recipie)}</script>
+    <script type='application/ld+json'>${JSON.stringify(recipe)}</script>
     <div class='card ${id}'>
       <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'>
         <div class='group' style='background-color: ${color};'>
@@ -75,7 +75,7 @@ function createCard(recept) {
                 <div class='cardInfo'>
                     <p style='display: inline; font-size: 1.5rem'>${recept.name}</p>
                     <p>Ingredienser: ${recept.ingredients}</p>
-                    ${recipie.recipeInstructions ? `<p>Instruktioner: ${recept.instructions}</p>` : ''}
+                    ${recipe.recipeInstructions ? `<p>Instruktioner: ${recept.instructions}</p>` : ''}
                     <p class='description'>${recept.desc}</p>
                 </div>
             </div>
