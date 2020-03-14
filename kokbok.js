@@ -42,10 +42,9 @@ function createCard(recept) {
       }
   };
     
-  if(recept.instructions == ""){
+  if(recept.instructions === ""){
       delete recipie.recipeInstructions;
   }
-  
     
   var htmlStr = `
     <script type='application/ld+json'>${JSON.stringify(recipie)}</script>
@@ -76,7 +75,7 @@ function createCard(recept) {
                 <div class='cardInfo'>
                     <p style='display: inline; font-size: 1.5rem'>${recept.name}</p>
                     <p>Ingredienser: ${recept.ingredients}</p>
-                    ${recipie.instructions ? <p>Instruktioner: ${recept.instructions}</p> : ''}
+                    ${recipie.recipeInstructions ? `<p>Instruktioner: ${recept.instructions}</p>` : ''}
                     <p class='description'>${recept.desc}</p>
                 </div>
             </div>
