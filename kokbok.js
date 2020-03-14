@@ -76,6 +76,7 @@ function createCard(recept) {
                 <div class='cardInfo'>
                     <p style='display: inline; font-size: 1.5rem'>${recept.name}</p>
                     <p>Ingredienser: ${recept.ingredients}</p>
+                    <p>Instruktioner: ${recept.instructions}</p>
                     <p class='description'>${recept.desc}</p>
                 </div>
             </div>

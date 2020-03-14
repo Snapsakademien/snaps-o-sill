@@ -205,5 +205,6 @@ b {
   .card {
     width: 27%;
     height: 280px;
+    margin: 15px 35px;
   }
 }
