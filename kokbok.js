@@ -24,7 +24,26 @@ function createCard(recept) {
   var id = recept.name.replace(" ", "-") + Math.round(Math.random() * 10000);
   console.log();
 
+
+  var recipie = {
+      "@context": "http://schema.org",
+      "@type": "Recipie",
+      "author": recept.group,
+      "description": recept.desc,
+      "image": recept.imgUrl,
+      "recipeIngredient": recept.ingredients,
+      "name": recept.name,
+      "recipeInstructions": recept.instructions,
+      "recipieYield": "1 snaps"
+  };
+    
+  if(recept.instructions == ""){
+      delete recipie.recipeInstructions;
+  }
+  
+    
   var htmlStr = `
+    <script type='application/ld+json'>${JSON.stringify(recipie)}</script>
     <div class='card ${id}'>
       <div class='image' style='background-image: url(${recept.imgUrl}); background-size: cover;'>
         <div class='group' style='background-color: ${color};'>
@@ -74,9 +93,7 @@ function createCard(recept) {
       }
     });
 
-  document
-    .querySelector(`.card.expanded.${id} > .cross`)
-    .addEventListener("click", function() {
+  document.querySelector(`.card.expanded.${id} > .cross`).addEventListener("click", function() {
       console.log("clicked");
       toggleOverlay(id);
     });
