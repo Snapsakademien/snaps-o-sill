@@ -27,7 +27,7 @@ function createCard(recept) {
 
   var recipie = {
       "@context": "http://schema.org",
-      "@type": "Recipie",
+      "@type": "Recipe",
       "author": recept.group,
       "description": recept.desc,
       "image": recept.imgUrl,
