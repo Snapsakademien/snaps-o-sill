@@ -28,13 +28,18 @@ function createCard(recept) {
   var recipie = {
       "@context": "http://schema.org",
       "@type": "Recipe",
-      "author": recept.group,
+      "author": recept.group+" i Snapsakademien",
       "description": recept.desc,
       "image": recept.imgUrl,
       "recipeIngredient": recept.ingredients,
       "name": recept.name,
       "recipeInstructions": recept.instructions,
-      "recipieYield": "1 snaps"
+      "recipieYield": "1 snaps",
+      "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": recept.ratingValue,
+          "reviewCount": recept.reviewCount
+      }
   };
     
   if(recept.instructions == ""){

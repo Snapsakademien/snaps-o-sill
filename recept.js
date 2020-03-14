@@ -6,7 +6,9 @@ var recept = [
       "Den här snapsen kan användas som biologisk krigsföring. Rekommenderas ej.",
     instructions: "",
     ingredients: ["Surströmming"],
-    imgUrl: "images/snaps.jpg"
+    imgUrl: "images/snaps.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Julsill",
@@ -16,7 +18,9 @@ var recept = [
     instructions: "",
     ingredients: ["Glögg", "apelsinjuice", "nejlikor", "saffran", "kanelstänger"],
     imgUrl:
-      "https://mittkok.expressen.se/wp-content/uploads/2013/12/63cd1606-3931-4ddf-b111-96df9b439e1b-700x700.jpg"
+      "https://mittkok.expressen.se/wp-content/uploads/2013/12/63cd1606-3931-4ddf-b111-96df9b439e1b-700x700.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Djävfulens kuk",
@@ -24,7 +28,9 @@ var recept = [
     desc: "Bra på pappret, men värdelös idé i övrigt. 2010.",
     instructions: "",
     ingredients: ["Jordgubbar", "citron"],
-    imgUrl: "images/t-red.jpg"
+    imgUrl: "images/t-red.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Te-sprit",
@@ -34,7 +40,9 @@ var recept = [
     instructions: "",
     ingredients: ["Påsar med te av blandad smak"],
     imgUrl:
-      "https://assets.icanet.se/t_product_large_v1,f_auto/7311857510622.jpg"
+      "https://assets.icanet.se/t_product_large_v1,f_auto/7311857510622.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Sillsnaps",
@@ -42,7 +50,9 @@ var recept = [
     desc: "Det bästa av två världar.",
     instructions: "",
     ingredients: ["Sill"],
-    imgUrl: "images/snaps.jpg"
+    imgUrl: "images/snaps.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Snapssill",
@@ -50,7 +60,9 @@ var recept = [
     desc: "Det bästa av två världar fast åt andra hållet.",
     instructions: "",
     ingredients: ["Snaps"],
-    imgUrl: "images/sill.jpg"
+    imgUrl: "images/sill.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Hokkysnaps",
@@ -59,7 +71,9 @@ var recept = [
       "Snaps med Hockeypulver för de dagar man känner sig lite extra brölig. Passar bra med en prilla i käften och slagsmål på isen.",
     instructions: "",
     ingredients: ["Hockeypulver"],
-    imgUrl: "images/snaps.jpg"
+    imgUrl: "images/snaps.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Träsprit",
@@ -69,7 +83,9 @@ var recept = [
     instructions: "",
     ingredients: ["Mycket granskott", "tallbarr", "björknäver", "apsang-te"],
     imgUrl:
-      "https://alternativbehandlingar.ifokus.se/u2/8f4ff3dedba21ae4fd2aef615f1bd9dc/default/spruce-2329909-960-720.jpg"
+      "https://alternativbehandlingar.ifokus.se/u2/8f4ff3dedba21ae4fd2aef615f1bd9dc/default/spruce-2329909-960-720.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "B-röd",
@@ -77,7 +93,9 @@ var recept = [
     desc: "Ska enligt utsago smaka ljuvligt. 2010.",
     instructions: "",
     ingredients: ["Jordgubbar", "rosmarin"],
-    imgUrl: "images/t-red.jpg"
+    imgUrl: "images/t-red.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Baconsnaps",
@@ -93,7 +111,9 @@ var recept = [
     <li>Bjud dina kära Snapsakademiekollegor på det. Spelar ingen roll att det egentligen är otjänligt - det tar slut ändå.</li>
     </ol>`,
     ingredients: ["Knaperstekt bacon"],
-    imgUrl: "images/snaps.jpg"
+    imgUrl: "images/snaps.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Framförallt stark",
@@ -101,7 +121,9 @@ var recept = [
     desc: "Habanerosnaps gjord av Bison 2014. 'Man sket blod i tre dagar'",
     instructions: "",
     ingredients: ["Habanero", "chili", "polkagris", "citronskal"],
-    imgUrl: "images/snaps.jpg"
+    imgUrl: "images/snaps.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Papas pepparkakssnaps",
@@ -110,7 +132,9 @@ var recept = [
       "Krossa pepparkakor i snapsen, sila ur det och smaka av med glögg. Felix Thiel och Papa.",
     instructions: "",
     ingredients: ["Pepparkakor", "glögg"],
-    imgUrl: "images/snaps.jpg"
+    imgUrl: "images/snaps.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Mojitosill",
@@ -119,7 +143,9 @@ var recept = [
       "Ger en väldigt fräsch smak. Myntan kan med fördel köras i mixer. Går även att slänga på en gnutta alkohol.",
     instructions: "",
     ingredients: ["Mynta", "lime", "sockerlag"],
-    imgUrl: "images/sill.jpg"
+    imgUrl: "images/sill.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Tvålsnaps",
@@ -127,7 +153,9 @@ var recept = [
     desc: "Ska ha smakat tvål enligt vissa. Maj 2019.",
     instructions: "",
     ingredients: ["Citronskal", "färska korianderblad"],
-    imgUrl: "images/snaps.jpg"
+    imgUrl: "images/snaps.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   },
   {
     name: "Biltemasill",
@@ -135,6 +163,8 @@ var recept = [
     desc: "En sill som har gått till historien",
     instructions: "",
     ingredients: ["Korv", "ketchup"],
-    imgUrl: "images/sill.jpg"
+    imgUrl: "images/sill.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
   }
 ];
