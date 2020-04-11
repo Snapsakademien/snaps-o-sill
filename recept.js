@@ -100,7 +100,7 @@ var recept = [
   {
     name: "Baconsnaps",
     group: "T2",
-    desc: `Undertecknad, T2a, stod för tillverkningen. Har fina bilder på den hemmasnickrade etiketten. Recensioner gör ingen glad. Det finns inget gott att säga om den. 2011?`,
+    desc: `Erik Bränström, T2a, stod för tillverkningen. Har fina bilder på den hemmasnickrade etiketten. Recensioner gör ingen glad. Det finns inget gott att säga om den. 2011?`,
     instructions: `
     <ol>
     <li>Knaperstek en jäkla massa bacon.</li>
@@ -164,6 +164,16 @@ var recept = [
     instructions: "",
     ingredients: ["Korv", "ketchup"],
     imgUrl: "images/sill.jpg",
+    ratingValue: "4.5",
+    reviewCount: "11"
+  },
+    {
+    name: "Tacosnaps",
+    group: "B2",
+    desc: `"Om man vill ha en hel surprise så luktar man inte på den."`,
+    instructions: "",
+    ingredients: ["Tacokryddmix"],
+    imgUrl: "images/snaps.jpg",
     ratingValue: "4.5",
     reviewCount: "11"
   }
