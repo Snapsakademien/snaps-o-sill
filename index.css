@@ -30,6 +30,7 @@ h1 {
   margin: 15px 28px;
   border-radius: 5px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .wrapper {

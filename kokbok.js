@@ -22,7 +22,6 @@ function createCard(recept) {
 
   // Random in case two things have the same name
   var id = recept.name.replace(" ", "-") + Math.round(Math.random() * 10000);
-  console.log();
 
 
   var recipe = {
@@ -45,6 +44,9 @@ function createCard(recept) {
   if(recept.instructions === ""){
       delete recipe.recipeInstructions;
   }
+  var ingredients = `<ul>
+  ${recept.ingredients.map(ingr => `<li>${ingr}</li>`).join("")}
+  </ul>`
     
   var htmlStr = `
     <script type='application/ld+json'>${JSON.stringify(recipe)}</script>
@@ -74,7 +76,8 @@ function createCard(recept) {
             <div class='footer'>
                 <div class='cardInfo'>
                     <p style='display: inline; font-size: 1.5rem'>${recept.name}</p>
-                    <p>Ingredienser: ${recept.ingredients}</p>
+                    <p>Ingredienser:</p>
+                    ${ingredients}
                     ${recipe.recipeInstructions ? `<p>Instruktioner: ${recept.instructions}</p>` : ''}
                     <p class='description'>${recept.desc}</p>
                 </div>
